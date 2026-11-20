@@ -1,0 +1,9 @@
+services:
+  document-filler:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./apps/document_filler/static:/app/apps/document_filler/static:ro
+    environment:
+      - PYTHONUNBUFFERED=1
