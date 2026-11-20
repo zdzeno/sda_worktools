@@ -7,7 +7,7 @@ ENV POETRY_VERSION=1.8.4 \
     PYTHONUNBUFFERED=1
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends curl \
+    && apt-get install -y --no-install-recommends curl libglib2.0-0 libxkbcommon0 \
     && curl -sSL https://install.python-poetry.org | python3 - \
     && apt-get purge -y curl \
     && apt-get autoremove -y \
@@ -19,5 +19,4 @@ COPY apps ./apps
 
 RUN /opt/poetry/bin/poetry install --no-ansi --only main
 
-EXPOSE 8000
-CMD ["poetry", "run", "uvicorn", "document_filler.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "-c", "from document_filler.gui import DocumentFillerWindow; from document_filler.main import main; print('import smoke ok')"]

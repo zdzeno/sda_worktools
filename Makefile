@@ -1,15 +1,15 @@
-.PHONY: help install dev lint docker-up docker-down
+.PHONY: help install dev lint smoke docker-smoke
 
 POETRY ?= poetry
 PYTHON ?= python3
 
 help:
 	@echo "Targets:"
-	@echo "  install     Install dependencies with Poetry"
-	@echo "  dev         Run document filler on http://127.0.0.1:8000"
-	@echo "  lint        Run Ruff"
-	@echo "  docker-up   Start app in Docker Compose"
-	@echo "  docker-down Stop Docker Compose"
+	@echo "  install       Install dependencies with Poetry"
+	@echo "  dev           Launch SDA Document Filler (desktop)"
+	@echo "  lint          Run Ruff"
+	@echo "  smoke         Import smoke test (no GUI window)"
+	@echo "  docker-smoke  Run import smoke test in Docker"
 
 install:
 	@command -v $(POETRY) >/dev/null 2>&1 || { echo "Install Poetry first: https://python-poetry.org/docs/#installation"; exit 1; }
@@ -21,10 +21,8 @@ dev: install
 lint:
 	$(POETRY) run ruff check apps/document_filler
 
-docker-up:
-	docker compose up --build
+smoke: install
+	$(POETRY) run python -c "from document_filler.gui import DocumentFillerWindow; from document_filler.main import main; print('smoke ok:', main.__name__)"
 
-docker-down:
-	docker compose down
-
-# Podman users: podman-compose up --build  (or: podman compose up --build)
+docker-smoke:
+	docker compose run --rm document-filler

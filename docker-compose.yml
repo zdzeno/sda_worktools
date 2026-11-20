@@ -1,9 +1,6 @@
 services:
   document-filler:
     build: .
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./apps/document_filler/static:/app/apps/document_filler/static:ro
     environment:
       - PYTHONUNBUFFERED=1
+    # Headless import smoke test only — launch the GUI on the host with `make dev`.
