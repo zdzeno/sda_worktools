@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Poetry
+# Keep poetry.lock committed; ignore local venv only.
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# App outputs (future)
+*.pdf
+output/
+tmp/
+
+# Environment
+.env
+.env.*
