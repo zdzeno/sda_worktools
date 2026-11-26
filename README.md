@@ -98,6 +98,16 @@ Template parsing and export are **intentionally not implemented** in this bootst
 | `make lint`    | Ruff on `apps/document_filler`             |
 | `make smoke`   | Import check without opening a window      |
 
+## Agent / Cursor engineering skills
+
+Repo config for [Matt Pocock's agent skills](https://github.com/mattpocock/skills) lives under `docs/agents/` and `AGENTS.md`. One-time bootstrap:
+
+```bash
+npx skills@latest add mattpocock/skills --skill=setup-matt-pocock-skills -a cursor
+```
+
+Poetry and Docker are **app** tooling only; they are not required for that skills setup.
+
 ## License
 
 TBD.
