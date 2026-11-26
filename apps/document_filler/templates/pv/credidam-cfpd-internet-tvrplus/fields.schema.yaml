@@ -1,0 +1,128 @@
+template_id: credidam-cfpd-internet-tvrplus
+label: Proces verbal CREDIDAM — CFPD internet (TVR Plus)
+category: PV
+fields:
+- key: bold_nr
+  label: Nr.
+  type: string
+  sample: Nr.
+  human_review: true
+  review_reason: heuristic_slug
+- key: bold_28370_din_23_10_2026
+  label: 28370 din 23.10.2026
+  type: string
+  sample: 28370 din 23.10.2026
+  human_review: true
+  review_reason: heuristic_slug
+- key: data_convocare
+  label: 23.10.2026
+  type: string
+  sample: 23.10.2026
+- key: bold_pentru_a_proceda_la_recepţia_cantitativă
+  label: pentru a proceda la recepţia cantitativă şi calitativă a serviciilor furnizate
+    de CREDIDAM
+  type: string
+  sample: pentru a proceda la recepţia cantitativă şi calitativă a serviciilor furnizate
+    de CREDIDAM
+  human_review: true
+  review_reason: heuristic_slug
+- key: bold_în_perioada
+  label: în perioada
+  type: string
+  sample: în perioada
+  human_review: true
+  review_reason: heuristic_slug
+- key: perioada_servicii
+  label: 01-30.09.2026
+  type: string
+  sample: 01-30.09.2026
+- key: valoare_servicii
+  label: 526,35 lei
+  type: string
+  sample: 526,35 lei
+- key: bold_nr_2
+  label: nr.
+  type: string
+  sample: nr.
+  human_review: true
+  review_reason: heuristic_slug
+- key: numar_factura_furnizor
+  label: CRD599328 din 12.10.2026
+  type: string
+  sample: CRD599328 din 12.10.2026
+- key: fragment_bold
+  label: A
+  type: string
+  sample: A
+  human_review: true
+  review_reason: short_fragment
+- key: perioada_servicii_2
+  label: 01-30.09.2026
+  type: string
+  sample: 01-30.09.2026
+- key: perioada_servicii_3
+  label: 01-30.09.2026
+  type: string
+  sample: 01-30.09.2026
+- key: bold_septembrie
+  label: SEPTEMBRIE
+  type: string
+  sample: SEPTEMBRIE
+  human_review: true
+  review_reason: heuristic_slug
+- key: bold_2026
+  label: '2026'
+  type: string
+  sample: '2026'
+  human_review: true
+  review_reason: heuristic_slug
+- key: perioada_servicii_4
+  label: 28349/12.10.2026
+  type: string
+  sample: 28349/12.10.2026
+- key: perioada_servicii_5
+  label: 28359/22.10.2026.
+  type: string
+  sample: 28359/22.10.2026.
+- key: bold_comisia_de_recepţie_în_unanimitate_hotăr
+  label: 'comisia de recepţie,  în unanimitate,  hotărăşte: Admiterea recepţiei cantitative
+    şi calitative a serviciilor'
+  type: string
+  sample: 'comisia de recepţie,  în unanimitate,  hotărăşte: Admiterea recepţiei cantitative
+    şi calitative a serviciilor'
+  human_review: true
+  review_reason: heuristic_slug
+- key: bold_în_perioada_2
+  label: în perioada
+  type: string
+  sample: în perioada
+  human_review: true
+  review_reason: heuristic_slug
+- key: perioada_servicii_6
+  label: 01-30.09.2026
+  type: string
+  sample: 01-30.09.2026
+- key: bold_conform
+  label: ', conform'
+  type: string
+  sample: ', conform'
+  human_review: true
+  review_reason: heuristic_slug
+- key: bold_nr_3
+  label: nr.
+  type: string
+  sample: nr.
+  default_from_settings: true
+  human_review: true
+  review_reason: heuristic_slug;settings_default_candidate
+- key: perioada_servicii_7
+  label: CRD599328 din 12.10.2026
+  type: string
+  sample: CRD599328 din 12.10.2026
+  default_from_settings: true
+- key: data
+  label: 23.10.2026
+  type: string
+  sample: 23.10.2026
+  human_review: true
+  review_reason: ambiguous_date

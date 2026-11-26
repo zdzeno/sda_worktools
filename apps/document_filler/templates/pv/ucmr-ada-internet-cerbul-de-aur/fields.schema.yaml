@@ -1,0 +1,71 @@
+template_id: ucmr-ada-internet-cerbul-de-aur
+label: PROCES VERBAL UCMR-ADA internet — Cerbul de Aur
+category: PV
+fields:
+- key: numar_pv
+  label: Nr. 28371 din 23.10.2026
+  type: string
+  sample: Nr. 28371 din 23.10.2026
+- key: data_convocare
+  label: 23.10.2026
+  type: string
+  sample: 23.10.2026
+  default_from_settings: true
+- key: bold_pentru_a_proceda_la_recepţia_cantitativă
+  label: pentru a proceda la recepţia cantitativă şi calitativă a serviciilor furnizate
+    de UCMR ADA
+  type: string
+  sample: pentru a proceda la recepţia cantitativă şi calitativă a serviciilor furnizate
+    de UCMR ADA
+  default_from_settings: true
+  human_review: true
+  review_reason: heuristic_slug;settings_default_candidate
+- key: perioada_servicii
+  label: 01.09.-30.09.2026
+  type: string
+  sample: 01.09.-30.09.2026
+  default_from_settings: true
+- key: valoare_servicii
+  label: 36,30 lei
+  type: string
+  sample: 36,30 lei
+- key: numar_factura_furnizor
+  label: 2025UCM-11699
+  type: string
+  sample: 2025UCM-11699
+  default_from_settings: true
+- key: data_semnare
+  label: 21.10.2026
+  type: string
+  sample: 21.10.2026
+  default_from_settings: true
+- key: perioada_servicii_2
+  label: 01.09.-30.09.2026
+  type: string
+  sample: 01.09.-30.09.2026
+- key: referinte_documente
+  label: 28346/12.10.2026
+  type: string
+  sample: 28346/12.10.2026
+  human_review: true
+  review_reason: compound_reference_block
+- key: bold_comisia_de_recepţie_în_unanimitate_hotăr
+  label: 'comisia de recepţie, în unanimitate, hotărăşte: Admiterea recepţiei cantitative
+    şi calitative a serviciilor de autorizare privind comunicarea publică a operelor
+    muzicale prin intermediul serviciilor o'
+  type: string
+  sample: 'comisia de recepţie, în unanimitate, hotărăşte: Admiterea recepţiei cantitative
+    şi calitative a serviciilor de autorizare privind comunicarea publică a operelor
+    muzicale prin intermediul serviciilor o'
+  human_review: true
+  review_reason: heuristic_slug
+- key: perioada_servicii_3
+  label: 01.09.-30.09.2026
+  type: string
+  sample: 01.09.-30.09.2026
+- key: data
+  label: 23.10.2026
+  type: string
+  sample: 23.10.2026
+  human_review: true
+  review_reason: ambiguous_date
