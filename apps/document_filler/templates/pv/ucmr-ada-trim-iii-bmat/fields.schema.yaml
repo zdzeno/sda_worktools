@@ -1,0 +1,188 @@
+template_id: ucmr-ada-trim-iii-bmat
+label: PROCES verbal TRIM III 2026 UCMR ADA (+ BMAT)
+category: PV
+fields:
+- key: data_convocare
+  label: 30.10.2026
+  type: string
+  sample: 30.10.2026
+- key: bold_pentru_a_proceda_la_recepţia_cantitativă
+  label: pentru a proceda la recepţia cantitativă şi calitativă a serviciilor furnizate
+    de UCMR-ADA
+  type: string
+  sample: pentru a proceda la recepţia cantitativă şi calitativă a serviciilor furnizate
+    de UCMR-ADA
+  human_review: true
+  review_reason: heuristic_slug
+- key: perioada_servicii
+  label: 01.07-30.09.2026
+  type: string
+  sample: 01.07-30.09.2026
+- key: referinte_documente
+  label: 28363/22.10.2026
+  type: string
+  sample: 28363/22.10.2026
+  human_review: true
+  review_reason: compound_reference_block
+- key: referinte_documente_2
+  label: . 7706/26.10.2026
+  type: string
+  sample: . 7706/26.10.2026
+  human_review: true
+  review_reason: compound_reference_block
+- key: perioada_servicii_2
+  label: 01.07-30.09.2026
+  type: string
+  sample: 01.07-30.09.2026
+- key: perioada_servicii_3
+  label: 27614/03.03.2026
+  type: string
+  sample: 27614/03.03.2026
+- key: bold_830667
+  label: ',830667 %'
+  type: string
+  sample: ',830667 %'
+  human_review: true
+  review_reason: heuristic_slug
+- key: bold_1_028_796_60
+  label: 1.028.796,60
+  type: string
+  sample: 1.028.796,60
+  human_review: true
+  review_reason: heuristic_slug
+- key: numar_factura_furnizor
+  label: 2025UCM-11776
+  type: string
+  sample: 2025UCM-11776
+  default_from_settings: true
+- key: data
+  label: 26.10.2026
+  type: string
+  sample: 26.10.2026
+  default_from_settings: true
+  human_review: true
+  review_reason: ambiguous_date
+- key: bold_845_628_48
+  label: 845.628,48
+  type: string
+  sample: 845.628,48
+  default_from_settings: true
+  human_review: true
+  review_reason: heuristic_slug;settings_default_candidate
+- key: fragment_bold
+  label: ','
+  type: string
+  sample: ','
+  default_from_settings: true
+  human_review: true
+  review_reason: short_fragment
+- key: referinte_documente_3
+  label: 28363/22.10.2026
+  type: string
+  sample: 28363/22.10.2026
+  default_from_settings: true
+  human_review: true
+  review_reason: compound_reference_block
+- key: bold_183_168_12
+  label: 183.168,12
+  type: string
+  sample: 183.168,12
+  default_from_settings: true
+  human_review: true
+  review_reason: heuristic_slug;settings_default_candidate
+- key: referinte_documente_4
+  label: 7706/26.10.2026.
+  type: string
+  sample: 7706/26.10.2026.
+  default_from_settings: true
+  human_review: true
+  review_reason: compound_reference_block
+- key: perioada_servicii_4
+  label: 01.07-30.09.2026
+  type: string
+  sample: 01.07-30.09.2026
+- key: perioada_servicii_5
+  label: 28280/19.08.2026
+  type: string
+  sample: 28280/19.08.2026
+  default_from_settings: true
+- key: perioada_servicii_6
+  label: 28327/18.09.2026
+  type: string
+  sample: 28327/18.09.2026
+  default_from_settings: true
+- key: perioada_servicii_7
+  label: 28356/20.10.2026
+  type: string
+  sample: 28356/20.10.2026
+  default_from_settings: true
+- key: perioada_servicii_8
+  label: 46889/20.10.2026,
+  type: string
+  sample: 46889/20.10.2026,
+  default_from_settings: true
+- key: perioada_servicii_9
+  label: 28363/22.10.2026
+  type: string
+  sample: 28363/22.10.2026
+  default_from_settings: true
+- key: perioada_servicii_10
+  label: 7706/26.10.2026
+  type: string
+  sample: 7706/26.10.2026
+  default_from_settings: true
+- key: perioada_servicii_11
+  label: 01.07-30.09.2026
+  type: string
+  sample: 01.07-30.09.2026
+  default_from_settings: true
+- key: perioada_servicii_12
+  label: 01.07-30.09.2026
+  type: string
+  sample: 01.07-30.09.2026
+- key: perioada_servicii_13
+  label: 28280/19.08.2026
+  type: string
+  sample: 28280/19.08.2026
+- key: perioada_servicii_14
+  label: 28327/18.09.2026
+  type: string
+  sample: 28327/18.09.2026
+- key: perioada_servicii_15
+  label: 28356/20.10.2026
+  type: string
+  sample: 28356/20.10.2026
+- key: bold_22_301641
+  label: 22,301641% %
+  type: string
+  sample: 22,301641% %
+  human_review: true
+  review_reason: heuristic_slug
+- key: bold_27_132308
+  label: 27,132308 %
+  type: string
+  sample: 27,132308 %
+  human_review: true
+  review_reason: heuristic_slug
+- key: perioada_servicii_16
+  label: 7706/26.10.2026,
+  type: string
+  sample: 7706/26.10.2026,
+- key: bold_comisia_de_recepţie_în_unanimitate_hotăr
+  label: 'comisia de recepţie, în unanimitate, hotărăşte: Admiterea recepţiei cantitative
+    şi calitative a serviciilor privind radiodifuzarea de către SRTv a'
+  type: string
+  sample: 'comisia de recepţie, în unanimitate, hotărăşte: Admiterea recepţiei cantitative
+    şi calitative a serviciilor privind radiodifuzarea de către SRTv a'
+  human_review: true
+  review_reason: heuristic_slug
+- key: perioada_servicii_17
+  label: 01.07-30.09.2026
+  type: string
+  sample: 01.07-30.09.2026
+- key: data_2
+  label: 30.10.2026
+  type: string
+  sample: 30.10.2026
+  human_review: true
+  review_reason: ambiguous_date

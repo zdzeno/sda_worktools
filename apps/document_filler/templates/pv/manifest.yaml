@@ -1,0 +1,113 @@
+category: PV
+label: Proces verbal
+description: >
+  Șabloane PV (recepție cantitativă/calitativă) pentru furnizori și seturi
+  trimestriale. Câmpurile din Word marcate cu bold devin placeholderi docxtpl.
+
+subcategories:
+  document:
+    label: Document (PV individual)
+    description: Proces verbal pentru o perioadă sau livrare punctuală (internet, CFPD).
+  document_set:
+    label: Set de documente (trimestrial)
+    description: PV-uri și anexe grupate pe trimestru (TRIM II/III, diferențe BMAT).
+
+groups:
+  ucmr_online:
+    label: UCMR-ADA — online
+    subcategory: document
+    templates:
+      - id: ucmr-ada-internet-cerbul-de-aur
+        label: PROCES VERBAL UCMR-ADA internet — Cerbul de Aur
+        drive_source: PROCES VERBAL UCMR-ADA internet septembrie 2026 cerbul de aur.docx
+        status: converted
+      - id: ucmr-ada-internet-tvrplus
+        label: PROCES VERBAL UCMR-ADA internet — TVR Plus
+        drive_source: PROCES VERBAL UCMR-ADA internet septembrie 2026 tvr.plus.doc
+        status: pending
+        notes: Sursă .doc pe Drive; necesită conversie manuală la .docx.
+
+  ucmr_set:
+    label: UCMR-ADA — trimestrial / set
+    subcategory: document_set
+    templates:
+      - id: ucmr-ada-trim-ii
+        label: PROCES verbal TRIM II UCMR ADA
+        drive_source: PROCES verbal TRIM II 2026 UCMR ADA.docx
+        status: inventory_only
+      - id: ucmr-ada-trim-iii-bmat
+        label: PROCES verbal TRIM III UCMR ADA (+ BMAT)
+        drive_source: PROCES verbal TRIM III 2026 UCMR ADA (+ BMAT).docx
+        status: converted
+      - id: ucmr-ada-trim-ii-bmat-diferenta
+        label: Raportări TRIM II — diferență BMAT
+        drive_source: PROCES verbal raportari TRIM II 2026_diferenta BMAT.docx
+        status: inventory_only
+
+  credidam_online:
+    label: CREDIDAM — online
+    subcategory: document
+    templates:
+      - id: credidam-cfpd-internet-tvrplus
+        label: Proces verbal CREDIDAM — CFPD (TVR Plus)
+        drive_source: Proces verbal CREDIDAM cfpd septembrie 2026 tvrplus.docx
+        status: converted
+      - id: credidam-internet-cerbul
+        label: Proces verbal CREDIDAM — internet (Cerbul)
+        drive_source: Proces verbal CREDIDAM internet octombrie 2026 cerb.docx
+        status: inventory_only
+      - id: credidam-trim-iii
+        label: PV trim III CREDIDAM
+        drive_source: PV trim III 2026 CREDIDAM.docx
+        subcategory: document_set
+        status: inventory_only
+
+  upfr:
+    label: UPFR
+    subcategory: document_set
+    templates:
+      - id: upfr-comision-copie-privata-trim-iii
+        label: PV Comision Copie Privată TRIM III
+        status: inventory_only
+      - id: upfr-ds-receptie-trim-ii
+        label: PV DS recepție trim II
+        status: inventory_only
+      - id: upfr-fact-trim-iii
+        label: PV fact trim III
+        status: inventory_only
+      - id: upfr-internet
+        label: PV Internet (lunar)
+        subcategory: document
+        status: inventory_only
+
+  mediaforest:
+    label: Mediaforest
+    subcategory: document
+    templates:
+      - id: mediaforest-lunar
+        label: PV MEDIAFOREST — lunar
+        status: inventory_only
+
+  copyro:
+    label: COPYRO
+    subcategory: document_set
+    templates:
+      - id: copyro-trim-iii
+        label: PV trim III COPYRO
+        status: inventory_only
+
+  unart:
+    label: UNART
+    subcategory: document_set
+    templates:
+      - id: unart-receptie-trim-iii
+        label: PV UNART recepție TRIM III
+        status: inventory_only
+
+  generic:
+    label: Generic
+    subcategory: document_set
+    templates:
+      - id: pv-trim-iii-generic
+        label: PV trim III (generic)
+        status: inventory_only
