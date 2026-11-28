@@ -22,13 +22,13 @@ Sidecar schemas live beside each template: `fields.schema.yaml`. Entries with `h
 | CREDIDAM | Proces verbal CREDIDAM internet octombrie 2026 cerb.docx | |
 | CREDIDAM | PV trim III 2026 CREDIDAM.docx | document_set |
 | UPFR | PV Comision Copie Privată TRIM III 2026 UPFR.docx | |
-| UPFR | PV DS receptie trim II 2026.docx | |
+| DACIN SARA | PV DS receptie trim II 2026.docx | |
 | UPFR | PV fact trim III 2026 UPFR.docx | |
 | UPFR | PV Internet SEPTEMBRIE 2026 UPFR.docx | |
 | Mediaforest | PV MEDIAFOREST - OCTOMBRIE 2026.docx | |
 | COPYRO | PV trim III 2026 COPYRO.docx | |
 | UNART | PV UNART RECEPTIE TRIM III 2026.docx | |
-| Generic | PV trim III 2026.docx | |
+| VISARTA | PV trim III 2026.docx | |
 
 ## Field patterns (observed)
 
@@ -39,8 +39,16 @@ Across UCMR / CREDIDAM PVs, bold fill-ins usually include:
 - **Perioada servicii** — interval raportat (`01.09.-30.09.2026`, trimestre)
 - **Valoare** — sumă în lei (TVA inclus)
 - **Factură furnizor** — ex. `2025UCM-11699`, `CRD599328`
-- **Referințe documente SDA** — perechi `nr./dată` în blocuri compuse (marked for review)
-- **Concluzii** — propoziții lungi bold (single field vs split — needs editorial decision)
+- **Data Factura furnizor** - ex. `01.01.2026`
+- **Referințe documente SDA** — perechi `nr./dată` în blocuri compuse.
+  - Pentru non-online si PV-uri altele decat MEDIAFOREST si coipie privata, exista:
+    - De obicei trei adrese SDA ce contin raportarile (excepti -  exista cazuri in care exita una singura: ex. DACIN SARA, COPYRO, VISARTA)
+    - O adresa DE cu baza de calcul
+    - O adresa SDA cu ponderea si remuneratia calculata
+  - Pentru online exista una sau doua adrese SDA (in cazul Credidam)
+
+### Ignorable field patterns111
+- **Concluzii** — propoziții lungi bold (those stay as in the template)
 
 Trimestrial **document_set** templates add more reference blocks and BMAT percentage lines than single **document** internet PVs.
 
