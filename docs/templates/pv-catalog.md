@@ -6,9 +6,9 @@ Category **PV** (Proces Verbal) — inventory from Google Drive folder **Templat
 
 | Template id | Romanian title (from file) | Sub-category | Unique keys | Review flags |
 |-------------|-------------------------------|--------------|-------------|----------------|
-| `ucmr-ada-internet-cerbul-de-aur` | PROCES VERBAL UCMR-ADA internet — Cerbul de Aur | document | 15 | 7 |
-| `credidam-cfpd-internet-tvrplus` | Proces verbal CREDIDAM CFPD septembrie (TVR Plus) | document | 26 | 16 |
-| `ucmr-ada-trim-iii-bmat` | PROCES verbal TRIM III UCMR ADA (+ BMAT) | document_set | 37 | 18 |
+| `ucmr-ada-internet-cerbul-de-aur` | PROCES VERBAL UCMR-ADA internet — Cerbul de Aur | document | 8 | 0 |
+| `credidam-cfpd-internet-tvrplus` | Proces verbal CREDIDAM CFPD septembrie (TVR Plus) | document | 10 | 0 |
+| `ucmr-ada-trim-iii-bmat` | PROCES verbal TRIM III UCMR ADA (+ BMAT) | document_set | 30 | 0 |
 
 Sidecar schemas live beside each template: `fields.schema.yaml`. Entries with `human_review: true` need Zeno's pass on **field keys** (not only labels). Settings-backed defaults are marked `default_from_settings: true` when the analyzer sees contract/licență/PDG context (may include false positives — trim in review).
 
@@ -47,8 +47,9 @@ Across UCMR / CREDIDAM PVs, bold fill-ins usually include:
     - O adresa SDA cu ponderea si remuneratia calculata
   - Pentru online exista una sau doua adrese SDA (in cazul Credidam)
 
-### Ignorable field patterns111
-- **Concluzii** — propoziții lungi bold (those stay as in the template)
+### Ignorabile (nu sunt câmpuri de completat)
+
+- **Concluzii** — propoziții lungi bold (rămân fixe în șablon; analyzerul nu le expune ca placeholderi)
 
 Trimestrial **document_set** templates add more reference blocks and BMAT percentage lines than single **document** internet PVs.
 

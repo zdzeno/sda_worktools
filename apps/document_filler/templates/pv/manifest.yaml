@@ -68,16 +68,25 @@ groups:
     templates:
       - id: upfr-comision-copie-privata-trim-iii
         label: PV Comision Copie Privată TRIM III
-        status: inventory_only
-      - id: upfr-ds-receptie-trim-ii
-        label: PV DS recepție trim II
+        drive_source: PV Comision Copie Privată TRIM III 2026 UPFR.docx
         status: inventory_only
       - id: upfr-fact-trim-iii
         label: PV fact trim III
+        drive_source: PV fact trim III 2026 UPFR.docx
         status: inventory_only
       - id: upfr-internet
         label: PV Internet (lunar)
+        drive_source: PV Internet SEPTEMBRIE 2026 UPFR.docx
         subcategory: document
+        status: inventory_only
+
+  dacin_sara:
+    label: DACIN SARA
+    subcategory: document_set
+    templates:
+      - id: dacin-sara-ds-receptie-trim-ii
+        label: PV DS recepție trim II
+        drive_source: PV DS receptie trim II 2026.docx
         status: inventory_only
 
   mediaforest:
@@ -104,10 +113,11 @@ groups:
         label: PV UNART recepție TRIM III
         status: inventory_only
 
-  generic:
-    label: Generic
+  visarta:
+    label: VISARTA
     subcategory: document_set
     templates:
-      - id: pv-trim-iii-generic
-        label: PV trim III (generic)
+      - id: visarta-trim-iii
+        label: PV trim III VISARTA
+        drive_source: PV trim III 2026.docx
         status: inventory_only
